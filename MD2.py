@@ -25,6 +25,7 @@ if(len(string)>16):
     msg.extend(array)#ADDING THE BLOCKS TO MSG 
 else: #THIS IS FOR INPUTS OF < 16-B, IT HAS THE SAME LOGIC FROM THE CODE RIGHT ABOVE 
     for i in range(0,len(string)):
+        
         msg.append(ord(string[i]))
     while((len(msg)%16!=0)):
         msg.append(16-len(string))
